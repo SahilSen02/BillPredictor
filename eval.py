@@ -38,11 +38,11 @@ if __name__ == '__main__':
 
     model_path = sys.argv[1]
 
-    hidden_size_1 = sys.argv[3]
+    hidden_size_1 = sys.argv[2]
 
-    hidden_size_2 = sys.argv[4]
+    hidden_size_2 = sys.argv[3]
 
-    test_path = sys.argv[5]
+    test_path = sys.argv[4]
 
     test_df = pd.read_csv(test_path)
 
