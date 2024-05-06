@@ -27,9 +27,13 @@ The training and testing data is pulled using the `GovText.py` module, and has t
 
 We chose each column for the following reasons:
 **Number of Committees**: If a bill is referred to multiple committees, attempts to reconcile the bill between the numerous committees and various hearings will take longer, leading to the bill having decreasing chances of passing.
+
 **Number of Cosponsors**: The number of cosponsors of a bill can indicate its support in the broader House of Representatives for the bill's **general idea**, but not necessarily the exact specifics of the bill.
+
 **Number of Sponsors**: The number of sponsors of a bill can indicate how many members have contributed substantively to the bill, which can give a sense of how the information surrounding a bill has been spread. For example, if a bill is shrouded in secrecy and only worked on by party leadership, we would expect it not just to have less sponsors but also for members to know less about the bill overall, decreasing its chance of passage.
+
 **Full Text**: Analyzing the full text of the bill can give us an idea of the partisan lean - beyond just what party is proposing the bill - because right-wing and left-wing causes use different terminology to address the same ideas.
+
 **Passed**: This is the target - did the bill pass or not?
 
 ## Code Explanation and Use
