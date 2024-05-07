@@ -104,4 +104,16 @@ Example use of this script is as follows:
 
 This command evaluates a trained model using the 'test.csv' file and downloads the predictions in a file called 'Test with Predictions.csv'
 
+### Results 
+* Partisan Lean prediction — Test set Accuracy: ~82%, indicating strong performance. Given that this was a supervised learning task, the accuracy was evaluated by comparing the predicted labels to the actual partisan lean labels. This high level of accuracy suggests that the model effectively generalized from the training set without overfitting.
+* Hyperparameter optimisation — the optuna module used a bayesian sweep and model plot indicated that the actual hyperparameters did not significantly impact the model results. However, the the configuration suggested by Optuna was as follows: Hidden Layer 1 Size = 13; Hidden Layer Size 2 = 16; Learning Rate = 0.00181 (note that with the Adam optimizer, the learning rate is modified for each parameter, taking into account first and second order moments.
+* Model Predictor — Test set Accuracy: ~99.79%, indicating strong performance. This implies that a bill’s passage can be predicted with relative accuracy. We operationalized several non-quantitative ideas such as partisanship, member leadership, and other factors
+through metrics associated with previous bills, and, using deep learning and other probabalistic approximation methods, managed to capture non-linear relationships to predict whether a bill in the US congress can pass.
+
+
+
+
+
+
+
 
